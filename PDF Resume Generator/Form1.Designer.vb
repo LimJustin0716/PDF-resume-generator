@@ -23,11 +23,11 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.generate_btn = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.filename = New System.Windows.Forms.Label()
+        Me.fullname = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -40,14 +40,14 @@ Partial Class Form1
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "PDF Resume Generator"
         '
-        'Button1
+        'generate_btn
         '
-        Me.Button1.Location = New System.Drawing.Point(120, 209)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(221, 48)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Generate Resume"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.generate_btn.Location = New System.Drawing.Point(120, 209)
+        Me.generate_btn.Name = "generate_btn"
+        Me.generate_btn.Size = New System.Drawing.Size(221, 48)
+        Me.generate_btn.TabIndex = 1
+        Me.generate_btn.Text = "Generate Resume"
+        Me.generate_btn.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -69,36 +69,36 @@ Partial Class Form1
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Full Name:"
         '
-        'Label4
+        'filename
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(149, 96)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(145, 35)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "Resume.pdf"
+        Me.filename.AutoSize = True
+        Me.filename.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.filename.Location = New System.Drawing.Point(149, 96)
+        Me.filename.Name = "filename"
+        Me.filename.Size = New System.Drawing.Size(145, 35)
+        Me.filename.TabIndex = 4
+        Me.filename.Text = "Resume.pdf"
         '
-        'Label5
+        'fullname
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(149, 136)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(127, 35)
-        Me.Label5.TabIndex = 5
-        Me.Label5.Text = "Full Name"
+        Me.fullname.AutoSize = True
+        Me.fullname.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.fullname.Location = New System.Drawing.Point(149, 136)
+        Me.fullname.Name = "fullname"
+        Me.fullname.Size = New System.Drawing.Size(127, 35)
+        Me.fullname.TabIndex = 5
+        Me.fullname.Text = "Full Name"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(472, 297)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.fullname)
+        Me.Controls.Add(Me.filename)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.generate_btn)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -108,9 +108,9 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents generate_btn As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents filename As Label
+    Friend WithEvents fullname As Label
 End Class
